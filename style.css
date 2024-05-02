@@ -19,7 +19,7 @@ body {
 ul {
     display: flex;
     list-style-type: none;
-    gap: 12px;
+    gap: 24px;
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -29,6 +29,11 @@ ul {
 .top {
     display: flex;
     justify-content: space-between;
+}
+
+.logo > img {
+    width: 84px;
+    height: 84px;
 }
 
 .content {
@@ -68,7 +73,7 @@ button {
 
 .box {
     display: flex;
-    width: 100%;
+    width: fit-content;
     height: 250px;
     background-color: rgb(145, 144, 143);
 }
@@ -90,7 +95,7 @@ h3 {
 .images {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     
     
 }
@@ -98,20 +103,25 @@ h3 {
 .image-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
 } 
 
 .image-box {
+    display: flex;
     height: 140px;
     width: 140px;
     border-radius: 10px;
-    border-color: #3882F6;
-    border-style: solid;
     border-width: 2px;
+    margin: 8px;
+    border-style: solid;
+   
 }
 
 .subtext {
     width: 140px;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -124,7 +134,7 @@ h3 {
     padding-right: 250px;
     text-align: left;
     background-color: #E5E7EB;
-    font-size: 36px;
+    font-size: 24px;
     font-style: italic;
     font-weight: light;
     color: #1F2937;
